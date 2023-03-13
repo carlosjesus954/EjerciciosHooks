@@ -1,0 +1,15 @@
+body{
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    margin-right: .625rem;
+}
+
+.reset{
+    background-color: rgb(36, 36, 36);
+    padding: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
