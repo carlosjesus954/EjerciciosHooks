@@ -13,3 +13,49 @@ button{
     font-size: 1.1rem;
     cursor: pointer;
 }
+.tachado{
+    text-decoration: line-through;
+}
+.global__container{
+    background-color: rgb(58, 58, 58);
+    padding: 1rem;
+}
+.global__h1{
+    color: white;
+}
+.global__small{
+    color: rgb(199, 199, 199);
+}
+.global__col{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.global__divs{
+    text-align: center;
+}
+.global__elements{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.global__span{
+    color: white;
+    font-size: 1.1rem;
+}
+.global__button{
+    padding: 1rem;
+}
+.global__h2{
+    color: white;
+}
+.global__input{
+    padding: 1rem;
+}
+@media (max-width: 600px){
+    .global__col{
+    grid-template-columns: repeat(1, 1fr
+    );
+    }
+}
