@@ -32,5 +32,11 @@ export const useTodo = () => {
       payload: id,
     });
   };
-  return { todos, handleNewTodo, handleDeleteTodo, handleToggleTodo };
+  return { 
+    todos, 
+    todosCount: todos.length,
+    pendingTodosCount: todos.filter(todo=>!todo.done).length,
+    handleNewTodo, 
+    handleDeleteTodo, 
+    handleToggleTodo };
 };

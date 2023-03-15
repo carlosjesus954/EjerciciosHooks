@@ -3,12 +3,12 @@ import { TodoAdd } from "./TodoAdd";
 import { TodoList } from "./TodoList";
 
 export const TodoApp = () => {
-  const { todos, handleNewTodo, handleDeleteTodo, handleToggleTodo } =
+  const { todos,todosCount, pendingTodosCount, handleNewTodo, handleDeleteTodo, handleToggleTodo } =
     useTodo();
   return (
     <div className="global__container">
       <h1 className="global__h1">
-        TodoApp : 10 <small className="global__small" >Pendientes: 2</small>{" "}
+        TodoApp : {todosCount} <small className="global__small" >Pendientes: {pendingTodosCount}</small>
       </h1>
       <hr />
       <div className="global__col">
